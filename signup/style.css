@@ -1,0 +1,564 @@
+body {
+    background: linear-gradient(rgba(26,43,81), rgba(111,45, 141)), no-repeat center center/cover;
+}
+
+.logo {
+    margin-top: 10px;
+    width: 300px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around; 
+    border-radius: 20px;
+    margin-bottom: 200px;
+}
+
+.mainII{
+   background-color: rgba(107, 107, 107, 0.329);
+    height: auto;
+    width: 360px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: auto;  
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.back {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    margin-right: 250px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #adadada6;
+    color: #ff0000;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+
+
+.loginp {
+    font-size: 68px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 15px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.445);
+    border: 0ch;
+    border-radius: 15px;
+    height: 45px;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+input:hover {
+    background-color: rgba(95, 95, 95, 0.342);
+    border: 0ch;
+    border-radius: 15px;
+    height: 45px;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+
+input:active {
+    background-color: rgba(95, 95, 95, 0.342);
+    border: 0ch;
+    border-radius: 15px;
+    height: 45px;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-color: rgb(145, 145, 145);
+
+}
+
+input:focus {
+    background-color: rgba(95, 95, 95, 0.342);
+    border: 0ch;
+    border-radius: 15px;
+    height: 45px;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+input::placeholder:hover {
+    color:#ffffff;
+    font-weight: 500;
+    
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+    font-weight: 500;  
+}
+
+.username {
+    margin-top: px;
+}
+
+.password {
+    margin-top: 15px; ;
+}
+
+.checkboxI {
+    margin-left: px;
+    margin-right: 100px;
+}
+
+.signup {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.signup:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-size-adjust: calc(1000);
+}
+
+input.checkbox {
+    width:20px;
+    height:20px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    font-weight: bold;
+    background-color:  rgb(36, 0, 0);
+    border-radius: 15px;
+    
+}
+
+input.checkbox:hover {
+    width:20px;
+    height:20px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    font-weight: bold;
+}
+
+input.checkbox::marker  {
+    width:20px;
+    height:20px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    font-weight: bold;
+    background-color:  rgb(36, 0, 0);
+}
+
+label {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.submit {
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    font-size: 30px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);  
+}
+
+.submit:hover {
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0 0 10px rgb(63, 63, 63);
+}
+
+.submit:focus {
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.loader {
+  border: 7px solid #69696971;
+  border-top: 7px solid #ab01ee;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  animation: spin 1.5s linear infinite;
+  display: none;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}   
+
+/* Responsive Design - Mobile */
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(rgba(26,43,81), rgba(111,45, 141)), no-repeat center center/cover;
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainII {
+        background-color: rgba(107, 107, 107, 0.329);
+        height: auto;
+        width: 90%;
+        max-width: 300px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: auto;  
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+        padding: 20px;
+    }
+
+    .loginp {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    input {
+        background-color: rgba(255, 255, 255, 0.445);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        max-width: 250px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+
+    input:hover {
+        background-color: rgba(95, 95, 95, 0.342);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 250px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    input:active {
+        background-color: rgba(95, 95, 95, 0.342);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 250px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    input:focus {
+        background-color: rgba(95, 95, 95, 0.342);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 250px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    .checkboxI {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .signup {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .submit {
+        height: 40px;
+        width: 80%;
+        max-width: 180px;
+        border-radius: 25px;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .submit:hover {
+        height: 40px;
+        width: 80%;
+        max-width: 180px;
+        border-radius: 25px;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+/* Responsive Design - Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background: linear-gradient(rgba(26,43,81), rgba(111,45, 141)), no-repeat center center/cover;
+        min-height: 100vh;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        margin-bottom: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainII {
+        background-color: rgba(107, 107, 107, 0.329);
+        height: auto;
+        width: 85%;
+        max-width: 350px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: auto;  
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+        padding: 25px;
+    }
+
+    .loginp {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    input {
+        background-color: rgba(255, 255, 255, 0.445);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        max-width: 280px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+
+    input:hover {
+        background-color: rgba(95, 95, 95, 0.342);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 280px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    input:active {
+        background-color: rgba(95, 95, 95, 0.342);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 280px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    input:focus {
+        background-color: rgba(95, 95, 95, 0.342);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 280px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    .submit {
+        height: 40px;
+        width: 90%;
+        max-width: 200px;
+        border-radius: 25px;
+        background-color: black;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .submit:hover {
+        height: 40px;
+        width: 90%;
+        max-width: 200px;
+        border-radius: 25px;
+        background-color: white;
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+/* Responsive Design - Desktop (Large screens) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        margin-top: 10px;
+        width: 250px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        margin-bottom: 200px;
+    }
+
+    .mainII {
+        background-color: rgba(107, 107, 107, 0.329);
+        height: auto;
+        width: 360px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: auto;  
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+
+    input {
+        background-color: rgba(255, 255, 255, 0.445);
+        border: 0ch;
+        border-radius: 15px;
+        height: 45px;
+        color: rgb(0, 0, 0);
+        width: 300px;
+        font-size: 16px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+}
+
+/* Responsive Design - Extra Large Screens */
+@media (min-width: 1025px) {
+    body {
+        background: linear-gradient(rgba(26,43,81), rgba(111,45, 141)), no-repeat center center/cover;
+        min-height: 100vh;
+    }
+}
+
+/* Ensure box-sizing is consistent */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}

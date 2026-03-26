@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seller login</title>
+    <link rel="stylesheet" href="style.css">
+       <script src="script.js"></script>
+</head>
+<body>
+    <img class="logo" src="https://safe-apricot-hd2vh9htch.edgeone.app/logo.png" alt="">
+<div class="main" >
+    <div class="mainII">
+        <form id="loginForm" onsubmit="validateForm(event)">              
+            <p class="loginp">Log in</p>
+            <input type="text" class="username" id="username" placeholder="Username">      
+            <input type="password" class="password" id="password" placeholder="Password">
+            <div class="checkboxI">
+                <input type="checkbox" class="checkbox" onclick="myFunction()"> <label>Show password</label>
+            </div>            
+            <button class="submit" onclick="loading()"  > <div id="load" class="loader" ></div> Login</button>
+            <p></p>
+            <a href="..\signup\index.html"  class="signup" >Sign up</a>
+        </form>
+        <div id="toast" class="toast"></div>
+        
+    </div>
+</div>    
+</body>
+</html>

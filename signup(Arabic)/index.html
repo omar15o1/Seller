@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل التاجر</title>
+    <link rel="stylesheet" href="style.css">
+       <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <img class="logo" src="https://safe-apricot-hd2vh9htch.edgeone.app/logo.png" alt="">
+    <button class="lang" onclick="changeLanguage()">EN</button>
+</header>
+    
+<div class="main" >
+    <div class="mainII">
+        <a href="..\login(Arabic)\index.html"><img class="back" height="50px" width="50px" src="https://safe-apricot-hd2vh9htch.edgeone.app/back-arrow.png" alt=""></a>
+        <form id="signupالنموذج" onsubmit="validateالنموذج(event)">              
+            <p class="loginp">التسجيل</p>
+            <input type="text" class="username" id="username" placeholder="اسم المستخدم">      
+            <input type="password" class="pass" id="password1" placeholder="كلمة المرور">
+            <input type="password" class="pass" id="password2" placeholder="تأكيد كلمة المرور">
+            <div class="checkboxI">
+            <input type="checkbox" class="checkbox" onclick="myFunction()"> <label class="checkbox" for="">اظهار كلمة المرور</label>
+            </div>            
+            <button class="submit" onclick="loading()"  > <div id="load" class="loader" ></div> التسجيل</button>
+        </form>
+        <div id="toast" class="toast"></div>
+    </div>
+    
+</div>    
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنبؤ سعر السيارة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div>
+        <a href="..\index.html" class="close"> 
+            <img src="https://safe-apricot-hd2vh9htch.edgeone.app/Untitled%20design.png" width="30" height="30" >  
+        </a> 
+        </div>    
+    </nav>
+    <div class="main">
+        <div class="mainI">
+            <form id="pridiction">
+                <h1>النموذج</h1>
+                <input type="text" id="manufacturer" class="textI" list="الماركة" placeholder="الماركة" >
+                    <datalist id="الماركة">
+                        <option>ACURA</option>
+                        <option>ALFA ROMEO</option>
+                        <option>AUDI</option>
+                        <option>BMW</option>
+                        <option>CHEVROLET</option>
+                        <option>CHRYSLER</option>
+                        <option>CITROEN</option>
+                        <option>DAEWOO</option>
+                        <option>DODGE</option>
+                        <option>FIAT</option>
+                        <option>FORD</option>
+                        <option>GAZ</option>
+                        <option>GMC</option>
+                        <option>HONDA</option>
+                        <option>HYUNDAI</option>
+                        <option>INFINITI</option>
+                        <option>ISUZU</option>
+                        <option>JAGUAR</option>
+                        <option>JEEP</option>
+                        <option>KIA</option>
+                        <option>LAND ROVER</option>
+                        <option>LEXUS</option>
+                        <option>LINCOLN</option>
+                        <option>MAZDA</option>
+                        <option>MERCEDES-BENZ</option>
+                        <option>MINI</option>
+                        <option>MITSUBISHI</option>
+                        <option>NISSAN</option>
+                        <option>OPEL</option>
+                        <option>PORSCHE</option>
+                        <option>RENAULT</option>
+                        <option>SSANGYONG</option>
+                        <option>SUBARU</option>
+                        <option>SUZUKI</option>
+                        <option>TOYOTA</option>
+                        <option>VAZ</option>
+                        <option>VOLKSWAGEN</option>
+                    </datalist>
+
+                <input type="number" id="year" class="year" name="year" min="1900" max="2026" step="1" placeholder="YYYY" data-i18n="year" />
+                <input type="text" id="model" class="textI" placeholder="الموديل" >
+                <input type="number" id="engineVolume" name="سعة المحرك" step="1" min="0.2" max="6.7" placeholder="سعة المحرك" >
+                <input type="text" id="mileage" class="mileageI" placeholder="المسافة المقطوعة" >
+                <input type="number" id="cylinders" step="1" max="16.0" min="1.0"  placeholder="عدد الاسطوانات" >
+                <input type="text" id="color" list="color" placeholder="اللون" >
+                    <datalist class="color">
+                        <option>Beige</option>
+                        <option>Black</option>
+                        <option>Blue</option>
+                        <option>Brown</option>
+                        <option>Carnelian red</option>
+                        <option>Golden</option>
+                        <option>Green</option>
+                        <option>Grey</option>
+                        <option>Orange</option>
+                        <option>Purple</option>
+                        <option>Red</option>
+                        <option>Silver</option>
+                        <option>Sky blue</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                    </datalist>
+                <input type="number" id="levy" placeholder="Levy">
+                <input type="number" id="airbags" step="1" min="0" max="16" placeholder="الوسائد الهوائية" >
+                <input type="text" id="fuelType" list="Fuel-type" placeholder="نوع الوقود">
+                    <datalist class="Fuel-type">
+                        <option>CNG</option>
+                        <option>Diesel</option>
+                        <option>Hybrid</option>
+                        <option>LPG</option>
+                        <option>Petrol</option>
+                        <option>Plug-in Hybrid</option>
+                    </datalist>
+                <input type="text" id="category" list="الفئة" placeholder="الفئة" >
+                    <datalist class="الفئة">
+                        <option>Cabriolet</option>
+                        <option>Coupe</option>
+                        <option>Goods wagon</option>
+                        <option>Hatchback</option>
+                        <option>Jeep</option>
+                        <option>Limousine</option>
+                        <option>Microbus</option>
+                        <option>Minivan</option>
+                        <option>Pickup</option>
+                        <option>Sedan</option>
+                        <option>Universal</option>
+                    </datalist>
+                <input type="text" id="gearBoxType" list="Gear box" placeholder="نوع ناقل الحركة" >
+                    <datalist id="Gear box">
+                        <option>Automatic</option>
+                        <option>Manual</option>
+                        <option>Tiptronic</option>
+                        <option>Variator</option>
+                    </datalist>
+                <select name="مقصورة جلد" class="select">
+                    <option>مقصورة جلد</option>
+                    <option>نعم</option>
+                    <option>لا</option>
+                </select>
+                <select id="driveWheels" name="عجلات القيادة" class="select">
+                    <option>عجلات القيادة</option>
+                    <option>4X4</option>
+                    <option>خلفي</option>
+                    <option>امامي</option>
+                </select>
+                <select name="الأبواب" class="textI">
+                    <option>الأبواب</option>
+                    <option>02</option>
+                    <option>04</option>
+                </select>
+                  <button class="fill">ملئ</button>
+                <select id="wheel" name="عجلة القيادة" class="textI">
+                    <option>عجلة القيادة</option>
+                    <option>يسار</option>
+                    <option>يمين</option>
+                </select>
+              
+                <input type="button" class="submit" value="تنبؤ">
+            </form>
+        </div>
+        <div class="dashboard">
+            <div class="static">
+                
+            </div>
+            <h2>السجل :</h2>
+            <div class="history">
+                <div class="history-card">
+                    <label class="hc">سيارة 1</label>
+                    
+                        <p>الماركة : Toyota</p>
+                        <p>الموديل : Camry</p>
+                        <p>السنة : 2018</p>
+                        <p>المسافة المقطوعة : 30,000 km</p>                     
+                        <p>اللون : Silver</p>  
+                    <button class="btn-card" id="btn-card">اضافة</button>       
+                </div>
+                <div class="history-card">
+                    <label class="hc">سيارة 2</label>
+                     <p>الماركة : Honda</p>
+                        <p>الموديل : Accord</p>
+                        <p>السنة : 2017</p>
+                        <p>المسافة المقطوعة : 45,000 km</p>                     
+                        <p>اللون : Black</p>
+                    <button class="btn-card">اضافة</button>       
+                </div>
+                <div class="history-card">
+                    <label class="hc">سيارة 3</label>
+                        <p>الماركة : Ford</p>
+                            <p>الموديل : Mustang</p>
+                            <p>السنة : 2019</p>
+                            <p>المسافة المقطوعة : 20,000 km</p>                     
+                            <p>اللون : Red</p> 
+                    <button class="btn-card">اضافة</button>       
+                </div>
+            </div>
+            <div class="price-l">
+                <label class="pl">السعر :</label>
+                <output class="price" form="#pridiction">00.0</output>
+            </div>
+            <div class="download">  
+                <a href="" class="df">تحميل بصيغة PDF</a>
+                <a class="df" href="">تحميل كملف Excel</a>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+<script src="../i18n.js"></script>
+</body>
+</html>

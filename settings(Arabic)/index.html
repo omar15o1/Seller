@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+<div class="selector">
+    <a href="..\index.html"><img class="back" height="50px" width="50px" src="https://safe-apricot-hd2vh9htch.edgeone.app/back-arrow.png" alt=""></a>
+                       <p class="header-p">الاعدادات</p>
+                    <a class="nav-a" data-bs-toggle="tab" href="#Account">الحساب</a>
+                    <a class="nav-a" data-bs-toggle="tab" href="#Data">البيانات</a>
+                    <a class="nav-b" data-bs-toggle="tab" href="#Plans">الخطط</a>
+</div>
+
+<div id="Account" class="tab-content">
+  <div class="tab-pane container active" id="Account"><div class="account-st">
+                <img class="logo" src="src/img/logo.png" alt="">
+                <input class="img-u" type="file" accept="image/png, image/jpeg">
+                <form class="account-st">
+                    <input class="input" type="text" placeholder="اسم المستخدم">
+                    <input class="input" type="email" placeholder="البريد الإلكتروني">
+                    <input class="input" type="password" class="password" id="password" placeholder="كلمة المرور">
+                    <input class="submit" type="submit" value="حفظ">
+                      <div class="checkboxI">
+                <input type="checkbox" class="checkbox" onclick="myFunction()"> <label>اظهار كلمة المرور</label>
+            </div>
+                    <input class="input" type="date" placeholder="Birthday">
+                    <select name="" id="">
+                        <option value="gender">الجنس</option>
+                        <option>ذكر</option>
+                        <option>أنثى</option>
+                    </select>
+                    
+                </form>
+            </div>
+  <div class="tab-pane container fade" id="Data">
+    <div class="Data">
+                <input type="button" class="download-d" value="تحميل بيانات seller">
+                <input type="button" class="delete-d" value="حذف جميع بيانات seller">
+                <input type="button" class="upload-d" value="رفع على الدرايف">
+            </div>
+    </div>
+           
+        <div class="Plans" id="Plans">
+                <div class="plan">
+                    <h1>الأساسية</h1>
+                    <p>الخصائص الأساسية</p>
+                    <p>5 عمليات حسابية في اليوم</p>
+                    <p>الوصول إلى الخصائص الأساسية</p>
+                    <p>مجانا</p>
+                </div>
+                <div class="plan">
+                    <h1>المميزة</h1>
+                    <p>الخصائص المميزة</p>
+                    <p> 100 عمليات حسابية في اليوم</p>
+                    <p>الوصول إلى الخصائص المميزة</p>
+                    <button>$9.99/شهريا</button>
+                </div>
+                <div class="plan">
+                     <h1>غير محدود</h1>
+                    <p>الخصائص المتقدمة</p>
+                    <p> ∞ عمليات حسابية في اليوم</p>
+                    <p>الوصول إلى جميع الخصائص</p>
+                    <button>$19.99/شهريا</button>
+                </div>
+        </div>
+    </div>    
+</body>
+</html>

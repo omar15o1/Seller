@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+<div class="selector">
+    <a href="..\index.html"><img class="back" height="50px" width="50px" src="https://safe-apricot-hd2vh9htch.edgeone.app/back-arrow.png" alt=""></a>
+                       <p class="header-p">Settings</p>
+                    <a class="nav-a" data-bs-toggle="tab" href="#Account">Account</a>
+                    <a class="nav-a" data-bs-toggle="tab" href="#Data">Data</a>
+                    <a class="nav-b" data-bs-toggle="tab" href="#Plans">Plans</a>
+</div>
+
+<div id="Account" class="tab-content">
+  <div class="tab-pane container active" id="Account"><div class="account-st">
+                <img class="logo" src="src/img/logo.png" alt="">
+                <input class="img-u" type="file" accept="image/png, image/jpeg">
+                <form class="account-st">
+                    <input class="input" type="text" placeholder="Username">
+                    <input class="input" type="email" placeholder="E-mail">
+                    <input class="input" type="password" class="password" id="password" placeholder="Password">
+                                  <div class="checkboxI">
+                <input type="checkbox" class="checkbox" onclick="myFunction()"> <label>Show password</label>
+            </div>
+                    
+        
+                    <input class="input" type="date" placeholder="Birthday">
+                    <select name="" id="">
+                        <option value="gender">gender</option>
+                        <option>male</option>
+                        <option>female</option>
+                    </select>
+                    <input class="submit" type="submit" value="Save">
+                </form>
+            </div>
+  <div class="tab-pane container fade" id="Data">
+    <div class="Data">
+                <input type="button" class="download-d" value="Download Seller data">
+                <input type="button" class="delete-d" value="Delete all Seller data">
+                <input type="button" class="upload-d" value="upload on drive">
+            </div>
+    </div>
+           
+        <div class="Plans" id="Plans">
+                <div class="plan">
+                    <h1>Basic</h1>
+                    <p> plan features</p>
+                    <p> 5 maths per day</p>
+                    <p>Access to basic features</p>
+                    <p>Free</p>
+                </div>
+                <div class="plan">
+                    <h1>Premium</h1>
+                    <p> plan features</p>
+                    <p> 100 maths per day</p>
+                    <p>Access to premium features</p>
+                    <button>$9.99/month</button>
+                </div>
+                <div class="plan">
+                     <h1>Ultimate</h1>
+                    <p> plan features</p>
+                    <p> ∞ maths per day</p>
+                    <p>Access to all features</p>
+                    <button>$19.99/month</button>
+                </div>
+        </div>
+    </div>    
+</body>
+</html>
