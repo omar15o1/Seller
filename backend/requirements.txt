@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+passlib[bcrypt]
+python-jose
+joblib
+numpy
+pandas
+reportlab
+openpyxl
+scikit-learn
