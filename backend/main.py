@@ -102,16 +102,19 @@ def get_db():
     try: yield db
     finally: db.close()
 
-#داله تتاكد من التوكن والمستخدم
+#تحديد الخطأ  بدل ما تكون عامه ال except
 def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username = payload.get("sub")
-        if username is None: raise HTTPException(status_code=401)
-    except:
+        username: str = payload.get("sub")
+        if username is None:
+            raise HTTPException(status_code=401, detail="Invalid token payload")
+    except jwt.PyJWTError:
         raise HTTPException(status_code=401, detail="Could not validate credentials")
+    
     user = db.query(User).filter(User.username == username).first()
-    if not user: raise HTTPException(status_code=401, detail="User not found")
+    if user is None:
+        raise HTTPException(status_code=401, detail="User not found")
     return user
 
 # Optional auth: allow the app to work without requiring login.
@@ -147,7 +150,7 @@ def register(user: UserAuth, db: Session = Depends(get_db)):
  
     return {"status": "success", "message": "Account created successfully"}
 
-#صفحه الظخول وارجاع التوكن
+#صفحه  الدخول وارجاع التوكن
 @app.post("/login")
 def login(user: UserAuth, db: Session = Depends(get_db)):
     db_user = db.query(User).filter(User.username == user.username).first()
